@@ -9,7 +9,7 @@ export default function App() {
           
           <View style={styles.logoContainer}>
             <View style={styles.logoBox}>
-              <MaterialIcons name="boina"  size={40} color="#6e1ce0" />
+              <MaterialIcons name="school" size={40} color="#6d1092" style={styles.boina} />
             </View>
           </View>
 
@@ -22,7 +22,7 @@ export default function App() {
               <MaterialIcons name="mail-outline" size={20} color="#999" style={styles.inputIcon} />
               <TextInput 
                 style={styles.input}
-                placeholder="danilo@gmail.com"
+                placeholder="seu@email.com"
                 placeholderTextColor="#ccc"
                 keyboardType="email-address"
               />
@@ -96,6 +96,14 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: 'center',
   },
+
+  boina: {
+    width: 40,
+    height: 40,
+    justifyContent: 'center',
+    display: 'flex',
+    alignItems: 'center'
+  },
   
   logoContainer: {
     alignItems: 'center',
@@ -153,6 +161,7 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 16,
     color: '#333',
+    fontFamily: 'Arial'
   },
 
   forgotPasswordContainer: {
@@ -205,8 +214,8 @@ const styles = StyleSheet.create({
   socialContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
-    gap: 20,
-    marginBottom: 40,
+    gap: 22,
+    marginBottom: 30,
   },
   socialButton: {
     width: 50,
@@ -215,7 +224,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 1,
+    borderWidth: 2,
     borderColor: '#EFEFEF',
   },
 
